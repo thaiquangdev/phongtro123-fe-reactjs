@@ -1,0 +1,40 @@
+import { Link } from "react-router-dom";
+import LoginForm from "./components/LoginForm";
+
+export default function Login() {
+  return (
+    <main className="">
+      <div className=" xl:max-w-[1020px] lg:max-w-[980px] md:max-w-[720px] sm:max-w-[540px] w-full mx-auto px-[10px] lg:my-[3rem]">
+        <div className="flex justify-center">
+          <div className="lg:w-7/12 w-full max-w-full px-[10px]">
+            <div className="lg:p-[3rem] rounded-[1rem] p-[42px] bg-white shadow-md">
+              <div className="flex items-center justify-center mb-5">
+                <Link
+                  to="/dang-nhap"
+                  className="xl:text-[1.75rem] flex items-center justify-center font-semibold pb-4 w-full border-b-2 border-redColor"
+                >
+                  Đăng nhập
+                </Link>
+                <Link
+                  to="/tao-tai-khoan-moi"
+                  className="xl:text-[1.75rem] flex items-center justify-center font-light text-[#7a8188] pb-4 w-full border-b-2 border-borderColor"
+                >
+                  Tạo tài khoản mới
+                </Link>
+              </div>
+              <LoginForm />
+              <p className="mt-3">
+                <Link
+                  to="/quen-mat-khau"
+                  className="text-blueColor underline text-[14px]"
+                >
+                  Bạn quên mật khẩu?
+                </Link>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+}

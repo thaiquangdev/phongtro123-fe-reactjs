@@ -12,6 +12,7 @@ module.exports = {
       colors: {
         borderColor: "#f1f1f1",
         redColor: "#ed1342",
+        blueColor: "#346cdc",
       },
       backgroundColor: {
         hoverBg: "#F8F9FA",
