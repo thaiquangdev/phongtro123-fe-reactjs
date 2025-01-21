@@ -13,10 +13,12 @@ module.exports = {
         borderColor: "#f1f1f1",
         redColor: "#ed1342",
         blueColor: "#346cdc",
+        greenColor: "#068906",
       },
       backgroundColor: {
         hoverBg: "#F8F9FA",
         redBg: "#ed1342",
+        greenBg: "#068906",
       },
     },
   },
